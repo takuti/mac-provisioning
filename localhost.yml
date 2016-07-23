@@ -1,0 +1,148 @@
+- hosts: localhost
+  vars:
+    homebrew_taps:
+      - caskroom/cask
+      - homebrew/core
+      - homebrew/dupes
+      - homebrew/python
+      - homebrew/science
+      - homebrew/versions
+      - homebrew/x11
+      - neovim/neovim
+      - nikolausdemmel/devel
+      - oame/nlp
+      - osrf/simulation
+      - staticfloat/julia
+    homebrew_packages:
+      - { name: glpk }
+      - { name: open-mpi }
+      - { name: freeimage }
+      - { name: collada-dom }
+      - { name: mogenerator }
+      - { name: lz4 }
+      - { name: tmux }
+      - { name: vim, install_options: [with-lua] }
+      - { name: spidermonkey }
+      - { name: octave }
+      - { name: suite-sparse421 }
+      - { name: libiconv }
+      - { name: cminpack }
+      - { name: wget }
+      - { name: veclibfort }
+      - { name: hugo }
+      - { name: libvo-aacenc }
+      - { name: apple-gcc42 }
+      - { name: cowsay }
+      - { name: jbig2dec }
+      - { name: git }
+      - { name: nkf }
+      - { name: qrupdate }
+      - { name: poco }
+      - { name: transfig }
+      - { name: lapack }
+      - { name: xpdf }
+      - { name: sdl_ttf }
+      - { name: sdl_image }
+      - { name: pyenv-virtualenv }
+      - { name: leiningen }
+      - { name: fontforge }
+      - { name: heroku }
+      - { name: opencv }
+      - { name: direnv }
+      - { name: lesstif }
+      - { name: neovim }
+      - { name: rbenv }
+      - { name: portmidi }
+      - { name: suite-sparse }
+      - { name: node }
+      - { name: boost-python }
+      - { name: libzzip }
+      - { name: sbt }
+      - { name: arpack }
+      - { name: mongodb }
+      - { name: swig }
+      - { name: coreutils }
+      - { name: jq }
+      - { name: gawk }
+      - { name: julia }
+      - { name: nmap }
+      - { name: libltc }
+      - { name: libusb }
+      - { name: gnutls }
+      - { name: cloog }
+      - { name: libgcrypt }
+      - { name: python3 }
+      - { name: peco }
+      - { name: metis }
+      - { name: libtar }
+      - { name: libyaml }
+      - { name: rlwrap }
+      - { name: qhull }
+      - { name: flann }
+      - { name: hdf5 }
+      - { name: tree }
+      - { name: valgrind }
+      - { name: openmotif }
+      - { name: reattach-to-user-namespace }
+      - { name: argp-standalone }
+      - { name: bison }
+      - { name: gnupg }
+      - { name: sdl_mixer }
+      - { name: sbcl }
+      - { name: ossp-uuid }
+      - { name: gsl }
+      - { name: zsh }
+    homebrew_cask_packages:
+      - { name: alfred }
+      - { name: appcleaner }
+      - { name: atom }
+      - { name: bettertouchtool }
+      - { name: bitbar }
+      - { name: caffeine }
+      - { name: dropbox }
+      - { name: google-chrome }
+      - { name: gyazo }
+      - { name: insomniax }
+      - { name: itsycal }
+      - { name: latexit }
+      - { name: magican }
+      - { name: mendeley-desktop }
+      - { name: monolingual }
+      - { name: seashore }
+      - { name: skitch }
+      - { name: skype }
+      - { name: slack }
+      - { name: the-unarchiver }
+      - { name: trim-enabler }
+
+  tasks:
+    - name: brew tap
+      homebrew_tap: tap={{ item }} state=present
+      with_items: '{{homebrew_taps}}'
+
+    - name: brew update
+      homebrew: update_homebrew=yes
+
+    #- name: brew install packages
+    #  homebrew: >
+    #   name={{ item.name }}
+    #   state=latest
+    #   install_options={{
+    #     item.install_options | default() | join(',')
+    #     if item.install_options is not string
+    #     else item.install_options
+    #   }}
+    # with_items: '{{homebrew_packages}}'
+
+    - name: brew install brew-cask
+      homebrew: name=brew-cask state=latest
+
+    - name: brew-cask install packages
+      homebrew_cask: name={{ item.name }} state=present
+      with_items: '{{homebrew_cask_packages}}'
+
+    - name: install oh-my-zsh
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+      args:
+        creates: ~/.oh-my-zsh/
+
