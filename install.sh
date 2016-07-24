@@ -6,4 +6,4 @@ if [ "$?" -ne 0 ]; then
 fi
 
 brew install ansible --HEAD
-ansible-playbook -i localhost localhost.yml
+ansible-playbook -i localhost playbook.yml
