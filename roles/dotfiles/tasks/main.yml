@@ -1,0 +1,7 @@
+---
+
+- name: create oh-my-zsh directory
+  file: path={{ home }}/.oh-my-zsh state=directory owner={{ ansible_user_id }} group=staff mode=0755
+
+- name: install oh-my-zsh
+  shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
