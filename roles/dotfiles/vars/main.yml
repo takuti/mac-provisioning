@@ -1,3 +1,12 @@
 ---
 
-home: /Users/{{ ansible_user_id }}
+github_user_id: takuti
+repository: git@github.com:{{ github_user_id }}/dotfiles.git
+dotfiles: /Users/{{ ansible_user_id }}/src/github.com/{{ github_user_id }/dotfiles
+
+links:
+  - { src: '{{ dotfiles }}/.zshrc' , dest: '/Users/{{ ansible_user_id }}/.zshrc' }
+  - { src: '{{ dotfiles }}/.vimrc' , dest: '/Users/{{ ansible_user_id }}/.vimrc' }
+  - { src: '{{ dotfiles }}/.tmux.conf' , dest: '/Users/{{ ansible_user_id }}/.tmux.conf' }
+  - { src: '{{ dotfiles }}/.pythonrc' , dest: '/Users/{{ ansible_user_id }}/.pythonrc' }
+  - { src: '{{ dotfiles }}/my_theme.zsh-theme' , dest: '/Users/{{ ansible_user_id }}/.oh-my-zsh/custom/themes/my_theme.zsh-theme' }
