@@ -103,6 +103,7 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: gyazo }
   - { name: insomniax }
+  - { name: iterm2 }
   - { name: itsycal }
   - { name: latexit }
   - { name: magican }

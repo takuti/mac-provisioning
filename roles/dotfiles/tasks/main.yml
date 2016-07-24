@@ -24,3 +24,6 @@
 - name: change shell to zsh
   shell: chsh -s /usr/local/bin/zsh
   become: no
+
+- name: write profile of iterm2
+  command: defaults write com.googlecode.iterm2 PrefsCustomFolder -string '{{ dotfiles }}/iterm2'
