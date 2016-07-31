@@ -2,7 +2,7 @@
 
 github_user_id: takuti
 repository: git@github.com:{{ github_user_id }}/dotfiles.git
-dotfiles: /Users/{{ ansible_user_id }}/src/github.com/{{ github_user_id }/dotfiles
+dotfiles: /Users/{{ ansible_user_id }}/src/github.com/{{ github_user_id }}/dotfiles
 
 links:
   - { src: '{{ dotfiles }}/zsh/zshrc' , dest: '/Users/{{ ansible_user_id }}/.zshrc' }
