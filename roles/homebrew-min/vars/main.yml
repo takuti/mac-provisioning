@@ -5,6 +5,7 @@ homebrew_taps:
 homebrew_packages:
   - { name: tmux }
   - { name: git }
+  - { name: vim, install_options: [with-lua] }
   - { name: neovim }
   - { name: peco }
   - { name: reattach-to-user-namespace }
