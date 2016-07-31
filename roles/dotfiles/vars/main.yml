@@ -1,7 +1,7 @@
 ---
 
 github_user_id: takuti
-repository: git@github.com:{{ github_user_id }}/dotfiles.git
+repository: https://github.com/{{ github_user_id }}/dotfiles.git
 dotfiles: /Users/{{ ansible_user_id }}/src/github.com/{{ github_user_id }}/dotfiles
 
 links:
