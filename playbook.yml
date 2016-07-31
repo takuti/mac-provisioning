@@ -2,5 +2,6 @@
 
 - hosts: localhost
   roles:
+    - { role: anaconda, tags: ['test'] }
     - { role: homebrew }
-    - { role: dotfiles, tags: ['test'] }
+    - { role: dotfiles }

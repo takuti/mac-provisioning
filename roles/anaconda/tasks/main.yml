@@ -1,0 +1,16 @@
+---
+
+- name: install pyenv
+  homebrew: name=pyenv state=latest
+
+- name: install python3 as anaconda
+  shell: "pyenv install anaconda3-4.1.0"
+
+- name: rehash pyenv
+  shell: "pyenv rehash"
+
+- name: set default python
+  shell: "pyenv global anaconda3-4.1.0"
+
+- name: update anaconda
+  shell: "conda update conda"
