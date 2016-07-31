@@ -1,0 +1,14 @@
+homebrew_taps:
+  - caskroom/cask
+  - neovim/neovim
+
+homebrew_packages:
+  - { name: tmux }
+  - { name: git }
+  - { name: neovim }
+  - { name: peco }
+  - { name: reattach-to-user-namespace }
+  - { name: zsh }
+
+homebrew_cask_packages:
+  - { name: iterm2 }
