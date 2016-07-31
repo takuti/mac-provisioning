@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode7.1 # Yosemite
+    - os: osx
+      osx_image: xcode7.3 # El Capitan
+
+before_install:
+  - brew update
+
+install:
+  - brew install ansible --HEAD
+
+script:
+  - ansible-playbook -i localhost playbook.yml --tags "test"
