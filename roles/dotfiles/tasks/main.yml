@@ -12,8 +12,14 @@
 - name: create oh-my-zsh custom theme
   file: path=/Users/{{ ansible_user_id }}/.oh-my-zsh/custom/themes state=directory owner={{ ansible_user_id }} group=staff mode=0755
 
-- name: create ~/.config directory for nvim
-  file: path=/Users/{{ ansible_user_id }}/.config state=directory owner={{ ansible_user_id }} group=staff mode=0755
+- name: create ~/.config/nvim/dein directory for nvim
+  file: path=/Users/{{ ansible_user_id }}/.config/nvim/dein state=directory owner={{ ansible_user_id }} group=staff mode=0755
+
+- name: get dein.vim
+  shell: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+
+- name: install dein.vim
+  shell: sh ./installer.sh /Users/{{ ansible_user_id }}/.config/nvim/dein
 
 - name: create links
   file: src={{ item.src }} dest={{ item.dest }} state=link force=true
