@@ -5,4 +5,4 @@
     - { role: homebrew }
     - { role: homebrew-min, tags: ['test'] }
     - { role: dotfiles, tags: ['test'] }
-    - { role: anaconda, tags: ['test'] }
+    - { role: python, tags: ['test'] }
