@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-which brew > /dev/null
-if [ "$?" -ne 0 ]; then
+if [ -z $(which brew) ]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
