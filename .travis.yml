@@ -15,4 +15,7 @@ before_script:
   - export PATH="$HOME/.pyenv/bin:$PATH"
 
 script:
-  - ansible-playbook -i localhost playbook.yml -v
+  - ansible-playbook -i localhost playbook.yml --tags "test" -v
+
+notifications:
+  email: false
