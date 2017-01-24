@@ -99,10 +99,10 @@ homebrew_cask_packages:
   - { name: atom }
   - { name: bettertouchtool }
   - { name: totalspaces }
-  - { name: bitbar }
   - { name: caffeine }
   - { name: dropbox }
   - { name: google-chrome }
+  - { name: google-japanese-ime }
   - { name: gyazo }
   - { name: insomniax }
   - { name: iterm2 }
