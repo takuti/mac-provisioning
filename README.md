@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/takuti/mac-provisioning.svg?branch=master)](https://travis-ci.org/takuti/mac-provisioning)
+
 ```
 $ ./install.sh
 ```
