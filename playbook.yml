@@ -3,6 +3,5 @@
 - hosts: localhost
   roles:
     - { role: homebrew }
-    - { role: homebrew-min, tags: ['test'] }
-    - { role: dotfiles, tags: ['test'] }
-    - { role: python, tags: ['test'] }
+    - { role: dotfiles }
+    - { role: python }
