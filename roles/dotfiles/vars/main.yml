@@ -3,13 +3,3 @@
 github_user_id: takuti
 repository: https://github.com/{{ github_user_id }}/dotfiles.git
 dotfiles: /Users/{{ ansible_user_id }}/src/github.com/{{ github_user_id }}/dotfiles
-
-links:
-  - { src: '{{ dotfiles }}/zsh/zshrc' , dest: '/Users/{{ ansible_user_id }}/.zshrc' }
-  - { src: '{{ dotfiles }}/zsh/my_theme.zsh-theme' , dest: '/Users/{{ ansible_user_id }}/.oh-my-zsh/custom/themes/my_theme.zsh-theme' }
-  - { src: '{{ dotfiles }}/vim/vimrc' , dest: '/Users/{{ ansible_user_id }}/.vimrc' }
-  - { src: '{{ dotfiles }}/vim/vimrc' , dest: '/Users/{{ ansible_user_id }}/.config/nvim/init.vim' }
-  - { src: '{{ dotfiles }}/tmux/tmux.conf' , dest: '/Users/{{ ansible_user_id }}/.tmux.conf' }
-  - { src: '{{ dotfiles }}/python/pythonrc' , dest: '/Users/{{ ansible_user_id }}/.pythonrc' }
-  - { src: '{{ dotfiles }}/git/gitconfig' , dest: '/Users/{{ ansible_user_id }}/.gitconfig' }
-  - { src: '{{ dotfiles }}/git/gitignore_global' , dest: '/Users/{{ ansible_user_id }}/.gitignore_global' }
