@@ -9,6 +9,11 @@
 - name: make install dotfiles
   command: make install chdir={{ dotfiles }}
 
+- name: change shell to zsh
+  shell: chsh -s /bin/zsh
+  become: no
+  ignore_errors: True
+
 - name: write profile of iterm2
   command: defaults write com.googlecode.iterm2 PrefsCustomFolder -string '{{ dotfiles }}/assets/iterm2'
 
