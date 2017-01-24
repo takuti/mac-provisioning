@@ -11,9 +11,3 @@
 
 - name: set default python
   shell: "pyenv global anaconda3-4.2.0"
-
-- name: update anaconda
-  shell: "conda update conda"
-
-- name: install package for neovim
-  shell: "pip install neovim"
