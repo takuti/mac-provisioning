@@ -1,0 +1,26 @@
+---
+
+- name: tap
+  command: brew tap sanemat/font
+
+- name: xquartz
+  command: brew install Caskroom/cask/xquartz
+
+- name: install
+  command: brew install ricty
+
+- name: clone fontpatcher repository
+  command: ghq get {{ repository }}
+
+- name: patch regular
+  command: fontforge -lang=py -script {{ powerline }}/scripts/powerline-fontpatcher /usr/local/Cellar/ricty/{{ version }}/share/fonts/Ricty-Regular.ttf
+
+- name: mv regular
+  command: mv Ricty\ Regular\ for\ Powerline.ttf ~/Library/Fonts/
+
+- name: patch bold
+  command: fontforge -lang=py -script {{ powerline }}/scripts/powerline-fontpatcher /usr/local/Cellar/ricty/{{ version }}/share/fonts/Ricty-Bold.ttf
+  become: yes
+
+- name: mv bold
+  command: mv Ricty\ Bold\ for\ Powerline.ttf ~/Library/Fonts/
