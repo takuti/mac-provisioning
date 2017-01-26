@@ -1,9 +1,4 @@
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode7.1 # Yosemite
-    - os: osx
-      osx_image: xcode7.3 # El Capitan
+os: osx
 
 before_install:
   - brew update
