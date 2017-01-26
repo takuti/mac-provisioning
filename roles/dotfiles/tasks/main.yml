@@ -19,3 +19,4 @@
 
 - name: install atom packages
   command: apm install --packages-file "$HOME"/.atom/packages.list
+  ignore_errors: True
