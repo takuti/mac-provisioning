@@ -33,6 +33,7 @@ homebrew_cask_packages:
   - { name: insomniax }
   - { name: iterm2 }
   - { name: itsycal }
+  - { name: java }
   - { name: latexit }
   - { name: magican }
   - { name: mendeley-desktop }
