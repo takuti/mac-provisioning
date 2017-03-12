@@ -6,3 +6,4 @@
     - { role: dotfiles, tags: ['test'] }
     - { role: python, tags: ['test'] }
     - { role: ricty }
+    - { role: misc }

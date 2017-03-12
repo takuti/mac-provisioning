@@ -1,0 +1,5 @@
+---
+
+- name: add /etc/hosts
+  shell: echo '127.0.0.1 {{ item }}' | sudo tee -a /etc/hosts
+  with_items: '{{ banned_hosts }}'
