@@ -1,7 +1,6 @@
 homebrew_taps:
   - caskroom/cask
   - neovim/neovim
-  - staticfloat/julia
 
 homebrew_packages:
   - { name: tmux }
@@ -12,7 +11,6 @@ homebrew_packages:
   - { name: neovim }
   - { name: rbenv }
   - { name: node }
-  - { name: julia }
   - { name: peco }
   - { name: ghq }
   - { name: tree }
@@ -45,3 +43,4 @@ homebrew_cask_packages:
   - { name: the-unarchiver }
   - { name: trim-enabler }
   - { name: visual-studio-code }
+  - { name: julia }
