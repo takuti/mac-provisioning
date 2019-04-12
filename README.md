@@ -21,6 +21,7 @@
     - [ ] Never
   - Siri
     - [ ] Disable
+    - [ ] Automatically hide
   - Dock
     - [ ] Left
   - Energy saver
@@ -32,7 +33,7 @@
     - [ ] Disable automatically adjust brightness
   - Day & time
     - [ ] Show date
-- TotalSpaces 2: `open /usr/local/Caskroom/totalspaces/2.5.0/TotalSpaces2.app`
+- ~TotalSpaces 2: `open /usr/local/Caskroom/totalspaces/2.5.0/TotalSpaces2.app`~
   - [ ] [Modify system integrity protection](https://totalspaces.binaryage.com/elcapitan)
   - [ ] Set ctrl+{1,2,3} hotkeys for moving spaces (disable transition, notification graphic)
 - Better Touch Tool
