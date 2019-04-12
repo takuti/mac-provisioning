@@ -16,31 +16,29 @@ homebrew_packages:
   - { name: tree }
   - { name: reattach-to-user-namespace }
   - { name: zsh }
+  - { name: hadoop }
+  - { name: hive }
 
 homebrew_cask_packages:
   - { name: alfred }
   - { name: appcleaner }
-  - { name: atom }
   - { name: bettertouchtool }
-  - { name: totalspaces }
+  # - { name: totalspaces }
   - { name: caffeine }
   - { name: dropbox }
   - { name: google-chrome }
   - { name: google-japanese-ime }
   - { name: gyazo }
-  - { name: insomniax }
   - { name: iterm2 }
   - { name: itsycal }
   - { name: java }
   - { name: latexit }
   - { name: mactex }
-  - { name: magican }
-  - { name: mendeley-desktop }
+  # - { name: magican }
+  - { name: mendeley }
   - { name: monolingual }
   - { name: skype }
   - { name: slack }
   - { name: steam }
   - { name: the-unarchiver }
-  - { name: trim-enabler }
   - { name: visual-studio-code }
-  - { name: julia }
