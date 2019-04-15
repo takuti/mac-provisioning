@@ -3,11 +3,15 @@
 - name: install pyenv
   homebrew: name=pyenv state=latest
 
+- name: find latest anaconda version
+  shell: 'pyenv install --list | grep "anaconda3-\d\.\d\.\d" | sort | tail -n 1 | xargs'
+  register: anaconda_version
+
 - name: install python3 as anaconda
-  shell: "pyenv install anaconda3-4.2.0"
+  shell: "pyenv install {{ anaconda_version.stdout }}"
 
 - name: rehash pyenv
   shell: "pyenv rehash"
 
 - name: set default python
-  shell: "pyenv global anaconda3-4.2.0"
+  shell: "pyenv global {{ anaconda_version.stdout }}"
