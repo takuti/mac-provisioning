@@ -31,7 +31,6 @@ homebrew_cask_packages:
   - { name: gyazo }
   - { name: iterm2 }
   - { name: itsycal }
-  - { name: java }
   - { name: latexit }
   - { name: mactex }
   # - { name: magican }
