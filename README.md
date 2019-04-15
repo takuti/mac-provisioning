@@ -17,6 +17,10 @@
     - [ ] Modifier keys: caps lock -> ctrl
     - [ ] Disable spotlight shortcuts and use cmd+space to select the previous input source
     - [ ] Customize touch bar: Remove Siri button
+    - [ ] Switch display {1,2,3}
+  - Accessibility
+    - [ ] Display > Reduce motion
+    - [ ] [`defaults write com.apple.dock expose-animation-duration -int 0; killall Dock`](https://apple.stackexchange.com/questions/17929/how-can-i-disable-animation-when-switching-desktops-in-lion)
   - Desktop & screen saver
     - [ ] Never
   - Siri
@@ -33,9 +37,6 @@
     - [ ] Disable automatically adjust brightness
   - Day & time
     - [ ] Show date
-- ~TotalSpaces 2: `open /usr/local/Caskroom/totalspaces/2.5.0/TotalSpaces2.app`~
-  - [ ] [Modify system integrity protection](https://totalspaces.binaryage.com/elcapitan)
-  - [ ] Set ctrl+{1,2,3} hotkeys for moving spaces (disable transition, notification graphic)
 - Better Touch Tool
   - [ ] Add ctrl+{up,down,left,right} shortcut for window maximization
   - [ ] Move window next window by Opt+Shift+up
