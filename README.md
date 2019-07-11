@@ -37,8 +37,8 @@
     - [ ] Disable automatically adjust brightness
   - Day & time
     - [ ] Show date
-- Better Touch Tool
-  - [ ] Add ctrl+{up,down,left,right} shortcut for window maximization
+- Better Snap Tool
+  - [ ] Add Opt+{up,down,left,right} shortcut for window maximization
   - [ ] Move window next window by Opt+Shift+up
 - Alfread
   - [ ] alc custom web search `http://eow.alc.co.jp/search?q={query}`

@@ -23,7 +23,6 @@ homebrew_cask_packages:
   - { name: 1password }
   - { name: alfred }
   - { name: appcleaner }
-  - { name: bettertouchtool }
   # - { name: totalspaces }
   - { name: caffeine }
   - { name: dropbox }
