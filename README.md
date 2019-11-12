@@ -5,6 +5,7 @@
 
 ## Instructions
 
+- [ ] [Run ssh-keygen](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [ ] Download this repo and run `./install.sh`
 - [ ] `pip install neovim`
 - System preference
