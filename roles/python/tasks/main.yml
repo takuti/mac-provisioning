@@ -15,3 +15,9 @@
 
 - name: set default python
   shell: "pyenv global {{ anaconda_version.stdout }}"
+
+- name: update pip itself
+  shell: "pip install --upgrade pip"
+
+- name: install pynvim
+  shell: "pip install pynvim"
