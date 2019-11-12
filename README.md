@@ -16,7 +16,7 @@
   - Keyboard
     - [ ] Disable mission control shortcuts
     - [ ] Modifier keys: caps lock -> ctrl
-    - [ ] Disable spotlight shortcuts and use cmd+space to select the previous input source
+    - [ ] Change spotlight shortcuts to opt+space, and use cmd+space to select the previous input source
     - [ ] Customize touch bar: Remove Siri button
     - [ ] Switch display {1,2,3}
   - Accessibility
@@ -41,6 +41,4 @@
 - Better Snap Tool
   - [ ] Add Opt+{up,down,left,right} shortcut for window maximization
   - [ ] Move window next window by Opt+Shift+up
-- Alfread
-  - [ ] alc custom web search `http://eow.alc.co.jp/search?q={query}`
 - [ ] `/etc/hosts`

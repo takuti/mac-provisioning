@@ -18,7 +18,6 @@ homebrew_packages:
 
 homebrew_cask_packages:
   - { name: 1password }
-  - { name: alfred }
   - { name: appcleaner }
   # - { name: totalspaces }
   - { name: caffeine }
