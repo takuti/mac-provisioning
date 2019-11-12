@@ -18,7 +18,7 @@
     - [ ] Modifier keys: caps lock -> ctrl
     - [ ] Change spotlight shortcuts to opt+space, and use cmd+space to select the previous input source
     - [ ] Customize touch bar: Remove Siri button
-    - [ ] Switch display {1,2,3}
+    - [ ] Create two more displays, and switch display by ctrl+{1,2,3}
   - Accessibility
     - [ ] Display > Reduce motion
     - [ ] [`defaults write com.apple.dock expose-animation-duration -int 0; killall Dock`](https://apple.stackexchange.com/questions/17929/how-can-i-disable-animation-when-switching-desktops-in-lion)
@@ -39,6 +39,11 @@
   - Day & time
     - [ ] Show date
 - Better Snap Tool
+  - [ ] Install via AppStore
   - [ ] Add Opt+{up,down,left,right} shortcut for window maximization
   - [ ] Move window next window by Opt+Shift+up
+- Automatically launch on system start up
+  - [ ] Google Japanese Input
+  - [ ] Dropbox
+  - [ ] 1Password
 - [ ] `/etc/hosts`
