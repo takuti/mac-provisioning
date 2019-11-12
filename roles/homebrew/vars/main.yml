@@ -15,8 +15,6 @@ homebrew_packages:
   - { name: tree }
   - { name: reattach-to-user-namespace }
   - { name: zsh }
-  - { name: hadoop }
-  - { name: hive }
 
 homebrew_cask_packages:
   - { name: 1password }
@@ -30,13 +28,7 @@ homebrew_cask_packages:
   - { name: gyazo }
   - { name: iterm2 }
   - { name: itsycal }
-  - { name: latexit }
-  - { name: mactex }
   # - { name: magican }
-  - { name: mendeley }
-  - { name: monolingual }
-  - { name: skype }
   - { name: slack }
-  - { name: steam }
   - { name: the-unarchiver }
   - { name: visual-studio-code }
