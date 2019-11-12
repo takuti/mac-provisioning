@@ -47,3 +47,4 @@
   - [ ] Dropbox
   - [ ] 1Password
 - [ ] `/etc/hosts`
+- [ ] Install [restart/sleep/logout/shutdown/lock shortcuts](https://github.com/siong1987/shortcuts)
