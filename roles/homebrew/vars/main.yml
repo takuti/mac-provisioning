@@ -19,15 +19,10 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: 1password }
   - { name: appcleaner }
-  # - { name: totalspaces }
-  - { name: caffeine }
   - { name: dropbox }
   - { name: google-chrome }
   - { name: google-japanese-ime }
-  - { name: gyazo }
   - { name: iterm2 }
-  - { name: itsycal }
-  # - { name: magican }
   - { name: slack }
   - { name: the-unarchiver }
   - { name: visual-studio-code }
