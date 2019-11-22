@@ -19,5 +19,5 @@
 - name: update pip itself
   shell: "pip install --upgrade pip"
 
-- name: install pynvim
-  shell: "pip install pynvim"
+- name: install packages for vim
+  shell: "pip install pynvim flake8 --ignore-installed"
