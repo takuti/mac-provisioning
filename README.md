@@ -24,6 +24,7 @@
     - [ ] [`defaults write com.apple.dock expose-animation-duration -int 0; killall Dock`](https://apple.stackexchange.com/questions/17929/how-can-i-disable-animation-when-switching-desktops-in-lion)
   - Desktop & screen saver
     - [ ] Never
+    - [ ] Hot Corners > Put displays to sleep
   - Siri
     - [ ] Disable
     - [ ] Automatically hide
