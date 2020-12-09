@@ -30,6 +30,7 @@
     - [ ] Automatically hide
   - Dock
     - [ ] Left
+    - [ ] Automatically hide
   - Energy saver
     - [ ] Turn display off after "Never"
     - [ ] Disable slightly dim
@@ -39,6 +40,8 @@
     - [ ] Disable automatically adjust brightness
   - Day & time
     - [ ] Show date
+	- Touch ID
+    - [ ] Configure
 - Better Snap Tool
   - [ ] Install via AppStore
   - [ ] Add Opt+{up,down,left,right} shortcut for window maximization
