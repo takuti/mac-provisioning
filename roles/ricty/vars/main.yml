@@ -1,4 +1,0 @@
----
-
-repository: https://github.com/powerline/fontpatcher.git
-powerline: /Users/{{ ansible_user_id }}/src/github.com/powerline/fontpatcher
