@@ -7,7 +7,7 @@
 
 - [ ] [Run ssh-keygen](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [ ] Download this repo and run `./install.sh`
-- [ ] `pip install neovim`
+- [ ] `pip install pynvim`
 - System preference
   - General
     - [ ] Use dark menu bar
