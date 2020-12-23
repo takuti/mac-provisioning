@@ -51,3 +51,5 @@
   - [ ] Dropbox
   - [ ] 1Password
 - [ ] `/etc/hosts`
+- iTerm2
+  - [ ] General > Preferences > Load preferences from a custom folder or URL
