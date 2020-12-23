@@ -1,0 +1,15 @@
+---
+
+- name: install nodebrew
+  homebrew: name=nodebrew state=latest
+
+- name: create a designated nodebrew directory
+  file:
+    path: ~/.nodebrew/src
+    state: directory
+
+- name: install latest version of node
+  shell: "nodebrew install latest"
+
+- name: use the installed version
+  shell: "nodebrew use latest"

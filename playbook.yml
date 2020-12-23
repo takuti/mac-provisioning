@@ -5,4 +5,5 @@
     - { role: homebrew }
     - { role: dotfiles, tags: ['test'] }
     - { role: python, tags: ['test'] }
+    - { role: node, tags: ['test'] }
     - { role: misc }
