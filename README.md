@@ -31,6 +31,7 @@
   - Dock
     - [ ] Left
     - [ ] Automatically hide
+    - [ ] Disable to show recent apps
   - Energy saver
     - [ ] Turn display off after "Never"
     - [ ] Disable slightly dim
@@ -40,7 +41,7 @@
     - [ ] Disable automatically adjust brightness
   - Day & time
     - [ ] Show date
-	- Touch ID
+  - Touch ID
     - [ ] Configure
 - Better Snap Tool
   - [ ] Install via AppStore
@@ -50,6 +51,5 @@
   - [ ] Google Japanese Input
   - [ ] Dropbox
   - [ ] 1Password
-- [ ] `/etc/hosts`
 - iTerm2
   - [ ] General > Preferences > Load preferences from a custom folder or URL
