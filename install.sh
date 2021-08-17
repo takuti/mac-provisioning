@@ -17,6 +17,7 @@ if [ -z $(which brew) ]; then
 fi
 
 brew install ansible --HEAD
+ansible-galaxy collection install community.general
 ansible-playbook -i localhost playbook.yml
 
 rm -rf ${TMP_DIR}
