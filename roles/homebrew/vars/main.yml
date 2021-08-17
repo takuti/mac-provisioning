@@ -10,6 +10,7 @@ homebrew_packages:
   - { name: direnv }
   - { name: neovim }
   - { name: rbenv }
+  - { name: nodenv }
   - { name: peco }
   - { name: ghq }
   - { name: tree }
