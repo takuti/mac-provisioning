@@ -24,6 +24,4 @@ homebrew_cask_packages:
   - { name: google-chrome }
   - { name: google-japanese-ime }
   - { name: iterm2 }
-  - { name: slack }
-  - { name: the-unarchiver }
   - { name: visual-studio-code }
