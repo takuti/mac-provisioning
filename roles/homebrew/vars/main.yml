@@ -14,7 +14,6 @@ homebrew_packages:
   - { name: peco }
   - { name: ghq }
   - { name: tree }
-  - { name: reattach-to-user-namespace }
   - { name: zsh }
 
 homebrew_cask_packages:
