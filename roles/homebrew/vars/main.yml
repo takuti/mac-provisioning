@@ -9,6 +9,7 @@ homebrew_packages:
   - { name: poco }
   - { name: direnv }
   - { name: neovim }
+  - { name: deno }
   - { name: rbenv }
   - { name: nodenv }
   - { name: peco }
