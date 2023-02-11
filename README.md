@@ -5,6 +5,11 @@
 
 ## Instructions
 
+- [ ] Manually install the following applications
+  - [ ] Google Chrome
+  - [ ] 1Password
+  - [ ] Notion
+  - [ ] Slack (from AppStore)
 - [ ] [Run ssh-keygen](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [ ] Download this repo and run `./install.sh`
 - [ ] `pip install pynvim`
@@ -18,7 +23,7 @@
     - [ ] Modifier keys: caps lock -> ctrl
     - [ ] Change spotlight shortcuts to opt+space, and use cmd+space to select the previous input source
     - [ ] Customize touch bar: Remove Siri button
-    - [ ] Create two more displays, and switch display by ctrl+{1,2,3}
+    - [ ] Create two more spaces, and configure switching display by ctrl+{1,2,3} on Mission Control shortcuts
   - Accessibility
     - [ ] Display > Reduce motion
     - [ ] [`defaults write com.apple.dock expose-animation-duration -int 0; killall Dock`](https://apple.stackexchange.com/questions/17929/how-can-i-disable-animation-when-switching-desktops-in-lion)
@@ -27,7 +32,6 @@
     - [ ] Hot Corners > Put displays to sleep
   - Siri
     - [ ] Disable
-    - [ ] Automatically hide
   - Dock
     - [ ] Left
     - [ ] Automatically hide
@@ -46,10 +50,10 @@
 - Better Snap Tool
   - [ ] Install via AppStore
   - [ ] Add Opt+{up,down,left,right} shortcut for window maximization
-  - [ ] Move window next window by Opt+Shift+up
+  - [ ] Maximize on next monitor by Opt+Shift+up
 - Automatically launch on system start up
-  - [ ] Google Japanese Input
   - [ ] Dropbox
   - [ ] 1Password
 - iTerm2
   - [ ] General > Preferences > Load preferences from a custom folder or URL
+  - [ ] Import profile from JSON: `dotfiles/assets/iterm2/terminal-main.json`

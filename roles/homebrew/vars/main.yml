@@ -18,10 +18,6 @@ homebrew_packages:
   - { name: zsh }
 
 homebrew_cask_packages:
-  - { name: 1password }
-  - { name: appcleaner }
   - { name: dropbox }
-  - { name: google-chrome }
-  - { name: google-japanese-ime }
   - { name: iterm2 }
   - { name: visual-studio-code }
