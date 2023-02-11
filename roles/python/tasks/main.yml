@@ -3,18 +3,18 @@
 - name: install pyenv
   homebrew: name=pyenv state=latest
 
-- name: find latest anaconda version
-  shell: 'pyenv install --list | grep "anaconda3-\d\.\d\.\d" | sort | tail -n 1 | xargs'
-  register: anaconda_version
+- name: find latest python version
+  shell: 'pyenv install --list | grep -E "^\s+\d+\.\d+\.\d+$" | tail -1'
+  register: python_version
 
-- name: install python3 as anaconda
-  shell: "pyenv install {{ anaconda_version.stdout }}"
+- name: install python
+  shell: "pyenv install {{ python_version.stdout }}"
 
 - name: rehash pyenv
   shell: "pyenv rehash"
 
 - name: set default python
-  shell: "pyenv global {{ anaconda_version.stdout }}"
+  shell: "pyenv global {{ python_version.stdout }}"
 
 - name: update pip itself
   shell: "pip install --upgrade pip"
