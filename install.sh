@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 if [ -z $(which brew) ]; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ${HOME}/.zprofile
+  source ${HOME}/.zprofile
 fi
 
 brew install ansible --HEAD
