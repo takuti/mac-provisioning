@@ -4,7 +4,7 @@
   homebrew: name=pyenv state=latest
 
 - name: find latest python version
-  shell: 'pyenv install --list | grep -E "^\s+\d+\.\d+\.\d+$" | tail -1'
+  shell: 'pyenv install --list | grep -E "^\s+3\.9\.\d+$" | tail -1'
   register: python_version
 
 - name: install python
